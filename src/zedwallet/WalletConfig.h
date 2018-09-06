@@ -10,10 +10,10 @@
 namespace WalletConfig
 {
     /* The prefix your coins address starts with */
-    const std::string addressPrefix = "PCCC";
+    const std::string addressPrefix = "PDFG";
 
     /* Your coins 'Ticker', e.g. Monero = XMR, Bitcoin = BTC */
-    const std::string ticker = "PCCC";
+    const std::string ticker = "POOC";
 
     /* The filename to output the CSV to in save_csv */
     const std::string csvFilename = "transactions.csv";
@@ -23,7 +23,7 @@ namespace WalletConfig
     const std::string addressBookFilename = ".addressBook.json";
 
     /* The name of your deamon */
-    const std::string daemonName = "POCCoind";
+    const std::string daemonName = "POOCoind";
 
     /* The name to call this wallet */
     const std::string walletName = "zedwallet";
