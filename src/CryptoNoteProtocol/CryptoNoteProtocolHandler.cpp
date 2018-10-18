@@ -585,11 +585,11 @@ bool CryptoNoteProtocolHandler::on_connection_synchronized() {
   if (m_synchronized.compare_exchange_strong(val_expected, true)) {
     logger(Logging::INFO)
       << ENDL ;
-      logger(INFO, BRIGHT_MAGENTA) << "===[ POCCoin Tip! ]=============================" << ENDL ;
-      logger(INFO, WHITE) << " Always exit POCCoin and zedwallet with the \"exit\" command to preserve your chain and wallet data." << ENDL ;
+      logger(INFO, BRIGHT_MAGENTA) << "===[ BurgerCoin Tip! ]=============================" << ENDL ;
+      logger(INFO, WHITE) << " Always exit BurgerCoin and zedwallet with the \"exit\" command to preserve your chain and wallet data." << ENDL ;
       logger(INFO, WHITE) << " Use the \"help\" command to see a list of available commands." << ENDL ;
       logger(INFO, WHITE) << " Use the \"export_keys\" command in zedwallet to display your keys for restoring a corrupted wallet." << ENDL ;
-      logger(INFO, WHITE) << " If you need more assistance, visit the #HELP channel in the POCCoin Discord Chat - http://chat.POCCoin.lol" << ENDL ;
+      logger(INFO, WHITE) << " If you need more assistance, visit the #HELP channel in the POCCoin Discord Chat - http://chat.BurgerCoin.lol" << ENDL ;
       logger(INFO, BRIGHT_MAGENTA) << "===================================================" << ENDL << ENDL ;
 
       logger(INFO, BRIGHT_GREEN) <<
@@ -602,11 +602,11 @@ bool CryptoNoteProtocolHandler::on_connection_synchronized() {
               "   | | |_| | |  | |_| |  __/ |___| (_) | | | | |\n"
       "   |_|\\__ _|_|   \\__|_|\\___|\\_____\\___/|_|_| |_|\n" << ENDL;
       #else
-    "\n		   ____   ___   ____          _      \n"  
-          "	|  _ \ / _ \ / ___|___ ___ (_)_ __   \n"
-          "	| |_) | | | | |   / __/ _ \| | '_ \  \n"
-          "	|  __/| |_| | |__| (_| (_) | | | | | \n"
-          "	|_|    \___/ \____\___\___/|_|_| |_| \n"<< ENDL;
+		"\n	| __ ) _   _ _ __ __ _  ___ _ __ / ___|___ (_)_ __    \n"
+		  " |  _ \| | | | '__/ _` |/ _ \ '__| |   / _ \| | '_ \   \n"
+		"	| |_) | |_| | | | (_| |  __/ |  | |__| (_) | | | | |  \n"
+		"	|____/ \__,_|_|  \__, |\___|_|   \____\___/|_|_| |_|  \n"
+		"					 |___/                                \n"<< ENDL;
       #endif
 
     m_observerManager.notify(&ICryptoNoteProtocolObserver::blockchainSynchronized, m_core.getTopBlockIndex());
